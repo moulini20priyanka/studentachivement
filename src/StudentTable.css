@@ -1,0 +1,72 @@
+/* Container for students table */
+.students-table-container {
+    padding: 20px;
+    width: 90%;
+    margin-top: 100px;
+    margin-left: 50px;
+    display: block; /* Ensure elements stack */
+    background-color: #f0f4f8; /* Light background color for contrast */
+}
+
+/* Scrollable container for the table */
+.scrollable-table {
+    max-height: 600px; /* Set a maximum height for the scrollable area */
+    overflow-y: auto;  /* Enable vertical scrolling */
+    overflow-x: auto;  /* Enable horizontal scrolling if the table is wide */
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #004080;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+/* Optional - Accent underline for the title */
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #004080;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+table {
+    width: 100%;
+    max-width: 1600px;  /* Increase the width to accommodate all columns */
+    border-collapse: collapse;
+    margin: 20px auto; /* Center the table horizontally */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+/* Styling for table headers and data cells */
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+/* Styling for table header */
+th {
+    background-color: #002b5b;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* Alternating row colors */
+tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+/* Row hover effect */
+tr:hover {
+    background-color: #f1f5f9; /* Highlight row on hover */
+    cursor: pointer;
+}
